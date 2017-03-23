@@ -1,0 +1,1132 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        glua.team - EasyCTF 2017, High School CTF Competition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="application-name" content="EasyCTF 2017"/>
+    <meta name="msapplication-tooltip" content="EasyCTF 2017"/>
+    <meta name="description" content="EasyCTF is a national, online, student-run high school hacking competition that opens the door to computer science and cybersecurity for students all over the world."/>
+    <meta name="og:title" content="glua.team - EasyCTF 2017, High School CTF Competition"/>
+    <meta name="og:site_name" content="EasyCTF 2017"/>
+    <meta name="og:description" content="EasyCTF is a national, online, student-run high school hacking competition that opens the door to computer science and cybersecurity for students all over the world."/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="icon" href="../../assets/images/logo.png"/>
+    
+        <meta name="keywords" content="ctf, high school, education, hacking, security, programming, computer science"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Forum" rel="stylesheet" type="text/css">
+    <link href="../../assets/css/main.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js" integrity="sha384-R4/ztc4ZlRqWjqIuvf6RX5yb/v90qNGx6fS48N0tRxiGkqveZETq72KgDVJCp2TC" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js" integrity="sha256-LOnFraxKlOhESwdU/dX+K0GArwymUDups0czPWLEg4E=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js" integrity="sha256-4PIvl58L9q7iwjT654TQJM+C/acEyoG738iL8B8nhXg=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/7.1.1/js/smooth-scroll.min.js" integrity="sha384-bznoxhRX5dRiE60JhQSru8t7g2RPG9lwqvyut8sjFFWmsAlp+R38e7DiATv1YyIu" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/livestamp/1.1.2/livestamp.min.js" integrity="sha256-8r65KJgULBDiZhwDydfWrEkx3yyV/grGsGzaekobngI=" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav role="navigation" class="navbar navbar-inverse" id="navbar">
+    <div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-content" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">EasyCTF 2017</a>
+    </div>
+    <div id="navbar-content" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li class="dropdown">
+                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-fw fa-info-circle"></i> About<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="../../about.1"><i class="fa fa-fw fa-info-circle"></i> About</a></li>
+                    <li><a href="../../about/sponsors"><i class="fa fa-fw fa-rocket"></i> Sponsors</a></li>
+                    <li><a href="../../about/prizes"><i class="fa fa-fw fa-trophy"></i> Prizes</a></li>
+                    <li><a href="../../about/rules"><i class="fa fa-fw fa-gavel"></i> Rules</a></li>
+                </ul>
+            </li>
+            <li><a href="https://writeups.easyctf.com"><i class="fa fa-fw fa-pencil"></i> Writeups</a></li>
+            <li><a href="../../scoreboard"><i class="fa fa-fw fa-bars"></i> Scoreboard</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            
+                
+                
+            
+        </ul>
+    </div>
+</div>
+</nav>
+<div style="min-height: 80vh;">
+    
+    <div class="section gradient">
+        <div class="container jumbotron">
+            <center>
+                <h1>glua.team</h1>
+                <h4><i class="fa fa-fw fa-university"></i> John Lua&#39;
+                </h4>
+                <p></p>
+                <div>
+                    
+                    
+                        <div class="label label-warning" data-toggle="tooltip" data-placement="top" title="This team isn't eligible for prizes.">
+                            <i class="fa fa-fw fa-globe"></i> Observer
+                        </div>
+                    
+                </div>
+            </center>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            
+    
+        
+    
+
+            <div class="row">
+                <div class="col-sm-3 col-xs-12">
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">Team Members</h4>
+                        </div>
+                        <div class="list-group">
+                            
+                                
+                                    <div class="list-group-item">
+                                        
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <a href="../../users/profile/3793">
+                                                        <img src="../../static/avatar_5f067001015df377d3eb08534ba62417cb977943" style="width:40px;height:40px;margin-right:10px;border:1px solid #ddd;border-radius:40px;"/>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <h4 class="list-group-item-heading" style="display:inline-block;">Adam Coggeshall</h4>
+                                                    
+                                                        <div class="label label-info">Captain</div>
+                                                    
+                                                    <p class="list-group-item-text">
+                                                        <a href="../../users/profile/3793">@cogg</a>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                
+                                    <div class="list-group-item">
+                                        
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <a href="../../users/profile/3839">
+                                                        <img src="../../static/avatar_78149a0b2aeca9235b13ee8ea0231ae7ab2ae66f" style="width:40px;height:40px;margin-right:10px;border:1px solid #ddd;border-radius:40px;"/>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <h4 class="list-group-item-heading" style="display:inline-block;">notcake</h4>
+                                                    
+                                                    <p class="list-group-item-text">
+                                                        <a href="../../users/profile/3839">@notcake</a>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                
+                                    <div class="list-group-item">
+                                        
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <a href="../../users/profile/3906">
+                                                        <img src="../../static/avatar_aff84867d6255b0820b4209793754622184b7f6e" style="width:40px;height:40px;margin-right:10px;border:1px solid #ddd;border-radius:40px;"/>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <h4 class="list-group-item-heading" style="display:inline-block;">Austin Okray</h4>
+                                                    
+                                                    <p class="list-group-item-text">
+                                                        <a href="../../users/profile/3906">@aokray</a>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                
+                                    <div class="list-group-item">
+                                        
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <a href="../../users/profile/3948">
+                                                        <img src="../../static/avatar_c6240355957c36d65601927dc91fb0c28f687c21" style="width:40px;height:40px;margin-right:10px;border:1px solid #ddd;border-radius:40px;"/>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <h4 class="list-group-item-heading" style="display:inline-block;">Jackson</h4>
+                                                    
+                                                    <p class="list-group-item-text">
+                                                        <a href="../../users/profile/3948">@HeartlessCarpet</a>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                
+                                    <div class="list-group-item">
+                                        
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <a href="../../users/profile/3986">
+                                                        <img src="../../static/avatar_243132f88bf83e71a42f1c3f4d4ef2278a5ead88" style="width:40px;height:40px;margin-right:10px;border:1px solid #ddd;border-radius:40px;"/>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <h4 class="list-group-item-heading" style="display:inline-block;">ling</h4>
+                                                    
+                                                    <p class="list-group-item-text">
+                                                        <a href="../../users/profile/3986">@thatling</a>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col-sm-9 col-xs-12">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <!--<li role="presentation"><a href="#activity" aria-controls="activity" role="tab" data-toggle="tab">Activity</a></li>-->
+                        <li role="presentation" class="active">
+                            <a href="1588#solves" aria-controls="solves" role="tab" data-toggle="tab">Solves</a>
+                        </li>
+                        
+                    </ul>
+                    <div class="tab-content">
+                        <!--<div role="tabpanel" class="tab-pane" id="activity">
+                        </div>-->
+                        <div role="tabpanel" class="tab-pane active" id="solves">
+
+                            <div id="progression_chart"></div>
+                            
+                            <table class="table table-striped table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Problem</th>
+                                    <th>Category</th>
+                                    <th>Value</th>
+                                    <th>Solver</th>
+                                    <th>Time</th>
+                                </tr>
+                                </thead>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>20xx</td>
+                                        <td>Forensics</td>
+                                        <td>50</td>
+                                        <td>notcake</td>
+                                        <td>
+                                            <span data-livestamp="1490044800"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Bizarro</td>
+                                        <td>Forensics</td>
+                                        <td>400</td>
+                                        <td>notcake</td>
+                                        <td>
+                                            <span data-livestamp="1489986120"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Kittycat</td>
+                                        <td>Steganography</td>
+                                        <td>290</td>
+                                        <td>notcake</td>
+                                        <td>
+                                            <span data-livestamp="1489955675"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Hex QR</td>
+                                        <td>Reverse Engineering</td>
+                                        <td>200</td>
+                                        <td>notcake</td>
+                                        <td>
+                                            <span data-livestamp="1489953323"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Match Me</td>
+                                        <td>Programming</td>
+                                        <td>300</td>
+                                        <td>thatling</td>
+                                        <td>
+                                            <span data-livestamp="1489950354"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Wayward Space Junk</td>
+                                        <td>Programming</td>
+                                        <td>300</td>
+                                        <td>notcake</td>
+                                        <td>
+                                            <span data-livestamp="1489941179"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Flag PEG</td>
+                                        <td>Forensics</td>
+                                        <td>150</td>
+                                        <td>notcake</td>
+                                        <td>
+                                            <span data-livestamp="1489893544"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>ZIP Tunnel</td>
+                                        <td>Forensics</td>
+                                        <td>160</td>
+                                        <td>notcake</td>
+                                        <td>
+                                            <span data-livestamp="1489892417"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Serial</td>
+                                        <td>Forensics</td>
+                                        <td>300</td>
+                                        <td>notcake</td>
+                                        <td>
+                                            <span data-livestamp="1489885630"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Decomphose</td>
+                                        <td>Forensics</td>
+                                        <td>325</td>
+                                        <td>notcake</td>
+                                        <td>
+                                            <span data-livestamp="1489874253"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>RSA 3</td>
+                                        <td>Cryptography</td>
+                                        <td>135</td>
+                                        <td>notcake</td>
+                                        <td>
+                                            <span data-livestamp="1489870235"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Listen Closely</td>
+                                        <td>Cryptography</td>
+                                        <td>200</td>
+                                        <td>notcake</td>
+                                        <td>
+                                            <span data-livestamp="1489867789"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>QR 2</td>
+                                        <td>Forensics</td>
+                                        <td>330</td>
+                                        <td>notcake</td>
+                                        <td>
+                                            <span data-livestamp="1489837200"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Morphin</td>
+                                        <td>Reverse Engineering</td>
+                                        <td>450</td>
+                                        <td>thatling</td>
+                                        <td>
+                                            <span data-livestamp="1489833109"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Edge 2</td>
+                                        <td>Web</td>
+                                        <td>200</td>
+                                        <td>notcake</td>
+                                        <td>
+                                            <span data-livestamp="1489786304"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Edge 1</td>
+                                        <td>Web</td>
+                                        <td>100</td>
+                                        <td>cogg</td>
+                                        <td>
+                                            <span data-livestamp="1489758130"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>67k</td>
+                                        <td>Reverse Engineering</td>
+                                        <td>400</td>
+                                        <td>cogg</td>
+                                        <td>
+                                            <span data-livestamp="1489754562"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>TinyEval</td>
+                                        <td>Web</td>
+                                        <td>100</td>
+                                        <td>thatling</td>
+                                        <td>
+                                            <span data-livestamp="1489752821"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>SQL Injection 2</td>
+                                        <td>Web</td>
+                                        <td>150</td>
+                                        <td>thatling</td>
+                                        <td>
+                                            <span data-livestamp="1489750947"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>My USB</td>
+                                        <td>Forensics</td>
+                                        <td>150</td>
+                                        <td>notcake</td>
+                                        <td>
+                                            <span data-livestamp="1489722699"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Finn</td>
+                                        <td>Forensics</td>
+                                        <td>200</td>
+                                        <td>notcake</td>
+                                        <td>
+                                            <span data-livestamp="1489713616"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Paillier Service</td>
+                                        <td>Cryptography</td>
+                                        <td>400</td>
+                                        <td>notcake</td>
+                                        <td>
+                                            <span data-livestamp="1489709876"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Diffie-cult</td>
+                                        <td>Cryptography</td>
+                                        <td>140</td>
+                                        <td>cogg</td>
+                                        <td>
+                                            <span data-livestamp="1489699915"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>library</td>
+                                        <td>Programming</td>
+                                        <td>175</td>
+                                        <td>notcake</td>
+                                        <td>
+                                            <span data-livestamp="1489696394"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Heaps of Knowledge</td>
+                                        <td>Binary Exploitation</td>
+                                        <td>420</td>
+                                        <td>thatling</td>
+                                        <td>
+                                            <span data-livestamp="1489695059"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Web Tunnel</td>
+                                        <td>Web</td>
+                                        <td>260</td>
+                                        <td>cogg</td>
+                                        <td>
+                                            <span data-livestamp="1489693325"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Fzz Buzz 2</td>
+                                        <td>Programming</td>
+                                        <td>200</td>
+                                        <td>notcake</td>
+                                        <td>
+                                            <span data-livestamp="1489691778"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Zooooooom</td>
+                                        <td>Forensics</td>
+                                        <td>85</td>
+                                        <td>cogg</td>
+                                        <td>
+                                            <span data-livestamp="1489668773"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Useless Python</td>
+                                        <td>Reverse Engineering</td>
+                                        <td>50</td>
+                                        <td>aokray</td>
+                                        <td>
+                                            <span data-livestamp="1489629934"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Security Through Obscurity</td>
+                                        <td>Cryptography</td>
+                                        <td>150</td>
+                                        <td>notcake</td>
+                                        <td>
+                                            <span data-livestamp="1489621373"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Blogbox</td>
+                                        <td>Web</td>
+                                        <td>135</td>
+                                        <td>notcake</td>
+                                        <td>
+                                            <span data-livestamp="1489617010"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Gibberish</td>
+                                        <td>Forensics</td>
+                                        <td>100</td>
+                                        <td>notcake</td>
+                                        <td>
+                                            <span data-livestamp="1489614554"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Fizz Buzz 1</td>
+                                        <td>Programming</td>
+                                        <td>50</td>
+                                        <td>cogg</td>
+                                        <td>
+                                            <span data-livestamp="1489604334"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Things Add Up</td>
+                                        <td>Programming</td>
+                                        <td>15</td>
+                                        <td>cogg</td>
+                                        <td>
+                                            <span data-livestamp="1489604123"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Ogrewatch</td>
+                                        <td>Forensics</td>
+                                        <td>100</td>
+                                        <td>cogg</td>
+                                        <td>
+                                            <span data-livestamp="1489592172"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>A-maze-ing</td>
+                                        <td>Miscellaneous</td>
+                                        <td>30</td>
+                                        <td>cogg</td>
+                                        <td>
+                                            <span data-livestamp="1489562098"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Let Me Be Frank</td>
+                                        <td>Cryptography</td>
+                                        <td>75</td>
+                                        <td>cogg</td>
+                                        <td>
+                                            <span data-livestamp="1489559392"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>QR 1</td>
+                                        <td>Forensics</td>
+                                        <td>100</td>
+                                        <td>notcake</td>
+                                        <td>
+                                            <span data-livestamp="1489548714"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Phunky Python II</td>
+                                        <td>Reverse Engineering</td>
+                                        <td>115</td>
+                                        <td>notcake</td>
+                                        <td>
+                                            <span data-livestamp="1489547265"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Doubly Dangerous</td>
+                                        <td>Binary Exploitation</td>
+                                        <td>110</td>
+                                        <td>notcake</td>
+                                        <td>
+                                            <span data-livestamp="1489546239"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Risky Business</td>
+                                        <td>Binary Exploitation</td>
+                                        <td>100</td>
+                                        <td>notcake</td>
+                                        <td>
+                                            <span data-livestamp="1489544693"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Simple Rop</td>
+                                        <td>Binary Exploitation</td>
+                                        <td>120</td>
+                                        <td>notcake</td>
+                                        <td>
+                                            <span data-livestamp="1489544083"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>RSA 2</td>
+                                        <td>Cryptography</td>
+                                        <td>80</td>
+                                        <td>aokray</td>
+                                        <td>
+                                            <span data-livestamp="1489542325"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Flag Collection</td>
+                                        <td>Forensics</td>
+                                        <td>80</td>
+                                        <td>notcake</td>
+                                        <td>
+                                            <span data-livestamp="1489538461"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Lucky Guess</td>
+                                        <td>Reverse Engineering</td>
+                                        <td>200</td>
+                                        <td>notcake</td>
+                                        <td>
+                                            <span data-livestamp="1489531718"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>RSA 1</td>
+                                        <td>Cryptography</td>
+                                        <td>50</td>
+                                        <td>aokray</td>
+                                        <td>
+                                            <span data-livestamp="1489531703"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Lost Seed</td>
+                                        <td>Cryptography</td>
+                                        <td>150</td>
+                                        <td>notcake</td>
+                                        <td>
+                                            <span data-livestamp="1489530403"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Hash On Hash</td>
+                                        <td>Cryptography</td>
+                                        <td>100</td>
+                                        <td>notcake</td>
+                                        <td>
+                                            <span data-livestamp="1489529596"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>SQL Injection 1</td>
+                                        <td>Web</td>
+                                        <td>100</td>
+                                        <td>notcake</td>
+                                        <td>
+                                            <span data-livestamp="1489528724"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Decode Me</td>
+                                        <td>Cryptography</td>
+                                        <td>100</td>
+                                        <td>notcake</td>
+                                        <td>
+                                            <span data-livestamp="1489528448"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Down a Notch</td>
+                                        <td>Programming</td>
+                                        <td>100</td>
+                                        <td>notcake</td>
+                                        <td>
+                                            <span data-livestamp="1489527503"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Petty Difference</td>
+                                        <td>Forensics</td>
+                                        <td>75</td>
+                                        <td>notcake</td>
+                                        <td>
+                                            <span data-livestamp="1489523654"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>scisnerof</td>
+                                        <td>Forensics</td>
+                                        <td>70</td>
+                                        <td>notcake</td>
+                                        <td>
+                                            <span data-livestamp="1489522945"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Genius</td>
+                                        <td>Cryptography</td>
+                                        <td>230</td>
+                                        <td>notcake</td>
+                                        <td>
+                                            <span data-livestamp="1489520302"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Hello, world!</td>
+                                        <td>Programming</td>
+                                        <td>10</td>
+                                        <td>notcake</td>
+                                        <td>
+                                            <span data-livestamp="1489516458"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Mane Event</td>
+                                        <td>Forensics</td>
+                                        <td>50</td>
+                                        <td>cogg</td>
+                                        <td>
+                                            <span data-livestamp="1489516424"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Cookie Blog</td>
+                                        <td>Web</td>
+                                        <td>30</td>
+                                        <td>cogg</td>
+                                        <td>
+                                            <span data-livestamp="1489516248"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Phunky Python I</td>
+                                        <td>Reverse Engineering</td>
+                                        <td>30</td>
+                                        <td>cogg</td>
+                                        <td>
+                                            <span data-livestamp="1489516097"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Hexable</td>
+                                        <td>Reverse Engineering</td>
+                                        <td>25</td>
+                                        <td>cogg</td>
+                                        <td>
+                                            <span data-livestamp="1489515781"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Clear and Concise Commentary on Caesar Cipher</td>
+                                        <td>Cryptography</td>
+                                        <td>20</td>
+                                        <td>cogg</td>
+                                        <td>
+                                            <span data-livestamp="1489515712"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Flip My Letters</td>
+                                        <td>Cryptography</td>
+                                        <td>20</td>
+                                        <td>cogg</td>
+                                        <td>
+                                            <span data-livestamp="1489515085"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>IRC</td>
+                                        <td>Miscellaneous</td>
+                                        <td>5</td>
+                                        <td>cogg</td>
+                                        <td>
+                                            <span data-livestamp="1489514231"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                            </table>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("[data-toggle=tooltip]").tooltip();
+            $("ul[role=tablist]").tab();
+            $("a[role=tab]").click(function (e) {
+                e.preventDefault();
+            });
+            
+
+
+            google.charts.load("current", {"packages": ["corechart"]});
+            google.charts.setOnLoadCallback(drawChart);
+
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([["Time", "Score"], ["0:00:00", 0], ["17:57:11", 5], ["18:11:25", 25], ["18:21:52", 45], ["18:23:01", 70], ["18:28:17", 100], ["18:30:48", 130], ["18:33:44", 180], ["18:34:18", 190], ["19:38:22", 420], ["20:22:25", 490], ["20:34:14", 565], ["21:38:23", 665], ["21:54:08", 765], ["21:58:44", 865], ["22:13:16", 965], ["22:26:43", 1115], ["22:48:23", 1165], ["22:48:38", 1365], ["24:41:01", 1445], ["25:45:25", 1525], ["26:14:43", 1645], ["26:24:53", 1745], ["26:50:39", 1855], ["27:07:45", 1970], ["27:31:54", 2070], ["30:29:52", 2145], ["31:14:58", 2175], ["39:36:12", 2275], ["42:55:23", 2290], ["42:58:54", 2340], ["45:49:14", 2440], ["46:30:10", 2575], ["47:42:53", 2725], ["50:05:34", 2775], ["60:52:53", 2860], ["67:16:18", 3060], ["67:42:05", 3320], ["68:10:59", 3740], ["68:33:14", 3915], ["69:31:55", 4055], ["72:17:56", 4455], ["73:20:16", 4655], ["75:51:39", 4805], ["83:42:27", 4955], ["84:13:41", 5055], ["84:42:42", 5455], ["85:42:10", 5555], ["93:31:44", 5755], ["106:31:49", 6205], ["107:40:00", 6535], ["116:09:49", 6735], ["116:50:35", 6870], ["117:57:33", 7195], ["121:07:10", 7495], ["123:00:17", 7655], ["123:19:04", 7805], ["136:32:59", 8105], ["139:05:54", 8405], ["139:55:23", 8605], ["140:34:35", 8895], ["149:02:00", 9295], ["165:20:00", 9345], ["215:29:07", 9345]]);
+
+                var options = {
+                    title: "Score Progression",
+                    curveType: "line",
+                    legend: {position: "right"},
+                    vAxes: { 0: {title: "Score"} },
+                    hAxes: { 0: {title: "Time"} },
+                };
+
+                var chart = new google.visualization.LineChart(document.getElementById("progression_chart"));
+
+                chart.draw(data, options);
+            }
+        });
+
+    </script>
+
+</div>
+<div class="footer">
+    <footer class="site-footer site-footer--sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <h5 class="footer-heading">EasyCTF 2017</h5>
+                <p>EasyCTF is a national, online, student-run high school hacking competition that opens the door to computer science and cybersecurity for students all over the world.</p>
+                <ul class="list-inline">
+                </ul>
+            </div>
+            <div class="col-sm-8">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <h5 class="footer-heading">Useful Links</h5>
+                        <ul>
+                            <li><a href="../../about.1">About</a></li>
+                            <li><a href="../../about/sponsors">Sponsors</a></li>
+                            <li><a href="../../about/prizes">Prizes</a></li>
+                            <li><a href="../../about/rules">Rules</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-8">
+                        <h5 class="footer-heading">Get in touch with us</h5>
+                        <p id="links">
+                            <a href="mailto:team@easyctf.com" target="_blank" rel="noopener"><i class="fa fa-fw fa-2x fa-envelope"></i></a>
+                            <a href="https://facebook.com/easyctf" target="_blank" rel="noopener"><i class="fa fa-fw fa-2x fa-facebook-square"></i></a>
+                            <a href="https://twitter.com/easyctf" target="_blank" rel="noopener"><i class="fa fa-fw fa-2x fa-twitter"></i></a>
+                            <a href="https://github.com/easyctf" target="_blank" rel="noopener"><i class="fa fa-fw fa-2x fa-github"></i></a>
+                            <a href="https://slack.easyctf.com" target="_blank" rel="noopener"><i class="fa fa-fw fa-2x fa-slack"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row footer-copyright">
+            <p>Copyright &copy; EasyCTF 2017. Powered by <a href="https://github.com/easyctf/openctf" target="_blank">OpenCTF</a>.</p>
+        </div>
+</footer>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32258920-2', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>

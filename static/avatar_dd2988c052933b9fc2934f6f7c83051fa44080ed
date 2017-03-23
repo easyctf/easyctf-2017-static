@@ -1,0 +1,41 @@
+print "Please enter your message"
+input1 = raw_input()
+output = [0] * len(input1)
+for i in range(len(input1)):
+     #input1[i] = input1[i].replace(' ','')
+     output[i] = input1[i].replace('a', '1')
+     output[i] = input1[i].replace('b', '2')
+     output[i] = input1[i].replace('c', '3')
+     output[i] = input1[i].replace('d', '4')
+     output[i] = input1[i].replace('e', '5')
+     output[i] = input1[i].replace('f', '6')
+     output[i] = input1[i].replace('g', '7')
+     output[i] = input1[i].replace('h', '8')
+     output[i] = input1[i].replace('i', '9')
+     output[i] = input1[i].replace('j', '10')
+     output[i] = input1[i].replace('k', '11')
+     output[i] = input1[i].replace('l', '12')
+     output[i] = input1[i].replace('m', '13')
+     output[i] = input1[i].replace('n', '14')
+     output[i] = input1[i].replace('o', '15')
+     output[i] = input1[i].replace('p', '16')
+     output[i] = input1[i].replace('q', '17')
+     output[i] = input1[i].replace('r', '18')
+     output[i] = input1[i].replace('s', '19')
+     output[i] = input1[i].replace('t', '20')
+     output[i] = input1[i].replace('u', '21')
+     output[i] = input1[i].replace('v', '22')
+     output[i] = input1[i].replace('w', '23')
+     output[i] = input1[i].replace('x', '24')
+     output[i] = input1[i].replace('y', '25')
+     output[i] = input1[i].replace('z', '26')
+print output
+
+for n in range(len(output)):
+     output[n] = int(output[n])
+
+print "Please enter your key"
+inputshift = int(raw_input())
+
+
+x = (x + y) % 26

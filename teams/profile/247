@@ -1,0 +1,907 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        blame james - EasyCTF 2017, High School CTF Competition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="application-name" content="EasyCTF 2017"/>
+    <meta name="msapplication-tooltip" content="EasyCTF 2017"/>
+    <meta name="description" content="EasyCTF is a national, online, student-run high school hacking competition that opens the door to computer science and cybersecurity for students all over the world."/>
+    <meta name="og:title" content="blame james - EasyCTF 2017, High School CTF Competition"/>
+    <meta name="og:site_name" content="EasyCTF 2017"/>
+    <meta name="og:description" content="EasyCTF is a national, online, student-run high school hacking competition that opens the door to computer science and cybersecurity for students all over the world."/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="icon" href="../../assets/images/logo.png"/>
+    
+        <meta name="keywords" content="ctf, high school, education, hacking, security, programming, computer science"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Forum" rel="stylesheet" type="text/css">
+    <link href="../../assets/css/main.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js" integrity="sha384-R4/ztc4ZlRqWjqIuvf6RX5yb/v90qNGx6fS48N0tRxiGkqveZETq72KgDVJCp2TC" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js" integrity="sha256-LOnFraxKlOhESwdU/dX+K0GArwymUDups0czPWLEg4E=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js" integrity="sha256-4PIvl58L9q7iwjT654TQJM+C/acEyoG738iL8B8nhXg=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/7.1.1/js/smooth-scroll.min.js" integrity="sha384-bznoxhRX5dRiE60JhQSru8t7g2RPG9lwqvyut8sjFFWmsAlp+R38e7DiATv1YyIu" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/livestamp/1.1.2/livestamp.min.js" integrity="sha256-8r65KJgULBDiZhwDydfWrEkx3yyV/grGsGzaekobngI=" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav role="navigation" class="navbar navbar-inverse" id="navbar">
+    <div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-content" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">EasyCTF 2017</a>
+    </div>
+    <div id="navbar-content" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li class="dropdown">
+                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-fw fa-info-circle"></i> About<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="../../about.1"><i class="fa fa-fw fa-info-circle"></i> About</a></li>
+                    <li><a href="../../about/sponsors"><i class="fa fa-fw fa-rocket"></i> Sponsors</a></li>
+                    <li><a href="../../about/prizes"><i class="fa fa-fw fa-trophy"></i> Prizes</a></li>
+                    <li><a href="../../about/rules"><i class="fa fa-fw fa-gavel"></i> Rules</a></li>
+                </ul>
+            </li>
+            <li><a href="https://writeups.easyctf.com"><i class="fa fa-fw fa-pencil"></i> Writeups</a></li>
+            <li><a href="../../scoreboard"><i class="fa fa-fw fa-bars"></i> Scoreboard</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            
+                
+                
+            
+        </ul>
+    </div>
+</div>
+</nav>
+<div style="min-height: 80vh;">
+    
+    <div class="section gradient">
+        <div class="container jumbotron">
+            <center>
+                <h1>blame james</h1>
+                <h4><i class="fa fa-fw fa-university"></i> Thomas Jefferson High School
+                </h4>
+                <p></p>
+                <div>
+                    
+                    
+                </div>
+            </center>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            
+    
+        
+    
+
+            <div class="row">
+                <div class="col-sm-3 col-xs-12">
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">Team Members</h4>
+                        </div>
+                        <div class="list-group">
+                            
+                                
+                                    <div class="list-group-item">
+                                        
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <a href="../../users/profile/751">
+                                                        <img src="../../static/avatar_d1d5f628841b0809e1fa98b5773e3189bcbbe8ab" style="width:40px;height:40px;margin-right:10px;border:1px solid #ddd;border-radius:40px;"/>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <h4 class="list-group-item-heading" style="display:inline-block;">Evan Shi</h4>
+                                                    
+                                                        <div class="label label-info">Captain</div>
+                                                    
+                                                    <p class="list-group-item-text">
+                                                        <a href="../../users/profile/751">@evanyeyeye</a>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                
+                                    <div class="list-group-item">
+                                        
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <a href="../../users/profile/753">
+                                                        <img src="../../static/avatar_b8e521d15e333a5089bce2425012b1b9804a9b14" style="width:40px;height:40px;margin-right:10px;border:1px solid #ddd;border-radius:40px;"/>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <h4 class="list-group-item-heading" style="display:inline-block;">Charles Zhao</h4>
+                                                    
+                                                    <p class="list-group-item-text">
+                                                        <a href="../../users/profile/753">@czhao</a>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                
+                                    <div class="list-group-item">
+                                        
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <a href="../../users/profile/754">
+                                                        <img src="../../static/avatar_9301799d5d78aaa287209d9c47fd455236cc7b44" style="width:40px;height:40px;margin-right:10px;border:1px solid #ddd;border-radius:40px;"/>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <h4 class="list-group-item-heading" style="display:inline-block;">Eric Wang</h4>
+                                                    
+                                                    <p class="list-group-item-text">
+                                                        <a href="../../users/profile/754">@ezwang</a>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                
+                                    <div class="list-group-item">
+                                        
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <a href="../../users/profile/755">
+                                                        <img src="../../static/avatar_c388e55f7ba37572d7379f2aee5069416d988adf" style="width:40px;height:40px;margin-right:10px;border:1px solid #ddd;border-radius:40px;"/>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <h4 class="list-group-item-heading" style="display:inline-block;">Samuel Damashek</h4>
+                                                    
+                                                    <p class="list-group-item-text">
+                                                        <a href="../../users/profile/755">@sdamashek</a>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                
+                                    <div class="list-group-item">
+                                        
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <a href="../../users/profile/757">
+                                                        <img src="../../static/avatar_8a7d9d0e2755fc3f54f152bdf42dfe24a52352cd" style="width:40px;height:40px;margin-right:10px;border:1px solid #ddd;border-radius:40px;"/>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <h4 class="list-group-item-heading" style="display:inline-block;">Neil Thistlethwaite</h4>
+                                                    
+                                                    <p class="list-group-item-text">
+                                                        <a href="../../users/profile/757">@shrucis1</a>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col-sm-9 col-xs-12">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <!--<li role="presentation"><a href="#activity" aria-controls="activity" role="tab" data-toggle="tab">Activity</a></li>-->
+                        <li role="presentation" class="active">
+                            <a href="247#solves" aria-controls="solves" role="tab" data-toggle="tab">Solves</a>
+                        </li>
+                        
+                    </ul>
+                    <div class="tab-content">
+                        <!--<div role="tabpanel" class="tab-pane" id="activity">
+                        </div>-->
+                        <div role="tabpanel" class="tab-pane active" id="solves">
+
+                            <div id="progression_chart"></div>
+                            
+                            <table class="table table-striped table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Problem</th>
+                                    <th>Category</th>
+                                    <th>Value</th>
+                                    <th>Solver</th>
+                                    <th>Time</th>
+                                </tr>
+                                </thead>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Morphin</td>
+                                        <td>Reverse Engineering</td>
+                                        <td>450</td>
+                                        <td>sdamashek</td>
+                                        <td>
+                                            <span data-livestamp="1489815728"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Decomphose</td>
+                                        <td>Forensics</td>
+                                        <td>325</td>
+                                        <td>evanyeyeye</td>
+                                        <td>
+                                            <span data-livestamp="1489812524"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Paillier Service</td>
+                                        <td>Cryptography</td>
+                                        <td>400</td>
+                                        <td>sdamashek</td>
+                                        <td>
+                                            <span data-livestamp="1489812226"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>SQL Injection 2</td>
+                                        <td>Web</td>
+                                        <td>150</td>
+                                        <td>shrucis1</td>
+                                        <td>
+                                            <span data-livestamp="1489790437"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>67k</td>
+                                        <td>Reverse Engineering</td>
+                                        <td>400</td>
+                                        <td>sdamashek</td>
+                                        <td>
+                                            <span data-livestamp="1489717064"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Fzz Buzz 2</td>
+                                        <td>Programming</td>
+                                        <td>200</td>
+                                        <td>shrucis1</td>
+                                        <td>
+                                            <span data-livestamp="1489714213"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Useless Python</td>
+                                        <td>Reverse Engineering</td>
+                                        <td>50</td>
+                                        <td>evanyeyeye</td>
+                                        <td>
+                                            <span data-livestamp="1489631704"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>ZIP Tunnel</td>
+                                        <td>Forensics</td>
+                                        <td>160</td>
+                                        <td>evanyeyeye</td>
+                                        <td>
+                                            <span data-livestamp="1489618144"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Finn</td>
+                                        <td>Forensics</td>
+                                        <td>200</td>
+                                        <td>evanyeyeye</td>
+                                        <td>
+                                            <span data-livestamp="1489613032"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>RSA 3</td>
+                                        <td>Cryptography</td>
+                                        <td>135</td>
+                                        <td>shrucis1</td>
+                                        <td>
+                                            <span data-livestamp="1489602951"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>TinyEval</td>
+                                        <td>Web</td>
+                                        <td>100</td>
+                                        <td>evanyeyeye</td>
+                                        <td>
+                                            <span data-livestamp="1489595161"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Fizz Buzz 1</td>
+                                        <td>Programming</td>
+                                        <td>50</td>
+                                        <td>evanyeyeye</td>
+                                        <td>
+                                            <span data-livestamp="1489594944"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Things Add Up</td>
+                                        <td>Programming</td>
+                                        <td>15</td>
+                                        <td>evanyeyeye</td>
+                                        <td>
+                                            <span data-livestamp="1489594765"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Hello, world!</td>
+                                        <td>Programming</td>
+                                        <td>10</td>
+                                        <td>evanyeyeye</td>
+                                        <td>
+                                            <span data-livestamp="1489594693"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Ogrewatch</td>
+                                        <td>Forensics</td>
+                                        <td>100</td>
+                                        <td>evanyeyeye</td>
+                                        <td>
+                                            <span data-livestamp="1489543165"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Flag Collection</td>
+                                        <td>Forensics</td>
+                                        <td>80</td>
+                                        <td>shrucis1</td>
+                                        <td>
+                                            <span data-livestamp="1489525374"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>QR 1</td>
+                                        <td>Forensics</td>
+                                        <td>100</td>
+                                        <td>shrucis1</td>
+                                        <td>
+                                            <span data-livestamp="1489523681"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>A-maze-ing</td>
+                                        <td>Miscellaneous</td>
+                                        <td>30</td>
+                                        <td>evanyeyeye</td>
+                                        <td>
+                                            <span data-livestamp="1489521946"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Doubly Dangerous</td>
+                                        <td>Binary Exploitation</td>
+                                        <td>110</td>
+                                        <td>sdamashek</td>
+                                        <td>
+                                            <span data-livestamp="1489519405"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>My USB</td>
+                                        <td>Forensics</td>
+                                        <td>150</td>
+                                        <td>evanyeyeye</td>
+                                        <td>
+                                            <span data-livestamp="1489514490"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Simple Rop</td>
+                                        <td>Binary Exploitation</td>
+                                        <td>120</td>
+                                        <td>ezwang</td>
+                                        <td>
+                                            <span data-livestamp="1489499078"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Risky Business</td>
+                                        <td>Binary Exploitation</td>
+                                        <td>100</td>
+                                        <td>ezwang</td>
+                                        <td>
+                                            <span data-livestamp="1489498096"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Zooooooom</td>
+                                        <td>Forensics</td>
+                                        <td>85</td>
+                                        <td>sdamashek</td>
+                                        <td>
+                                            <span data-livestamp="1489476664"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>RSA 1</td>
+                                        <td>Cryptography</td>
+                                        <td>50</td>
+                                        <td>sdamashek</td>
+                                        <td>
+                                            <span data-livestamp="1489475685"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>RSA 2</td>
+                                        <td>Cryptography</td>
+                                        <td>80</td>
+                                        <td>sdamashek</td>
+                                        <td>
+                                            <span data-livestamp="1489475572"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Lucky Guess</td>
+                                        <td>Reverse Engineering</td>
+                                        <td>200</td>
+                                        <td>sdamashek</td>
+                                        <td>
+                                            <span data-livestamp="1489470545"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Genius</td>
+                                        <td>Cryptography</td>
+                                        <td>230</td>
+                                        <td>sdamashek</td>
+                                        <td>
+                                            <span data-livestamp="1489466492"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Phunky Python II</td>
+                                        <td>Reverse Engineering</td>
+                                        <td>115</td>
+                                        <td>evanyeyeye</td>
+                                        <td>
+                                            <span data-livestamp="1489463035"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Let Me Be Frank</td>
+                                        <td>Cryptography</td>
+                                        <td>75</td>
+                                        <td>evanyeyeye</td>
+                                        <td>
+                                            <span data-livestamp="1489458396"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Hash On Hash</td>
+                                        <td>Cryptography</td>
+                                        <td>100</td>
+                                        <td>evanyeyeye</td>
+                                        <td>
+                                            <span data-livestamp="1489457955"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Mane Event</td>
+                                        <td>Forensics</td>
+                                        <td>50</td>
+                                        <td>czhao</td>
+                                        <td>
+                                            <span data-livestamp="1489457249"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>SQL Injection 1</td>
+                                        <td>Web</td>
+                                        <td>100</td>
+                                        <td>ezwang</td>
+                                        <td>
+                                            <span data-livestamp="1489456971"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Decode Me</td>
+                                        <td>Cryptography</td>
+                                        <td>100</td>
+                                        <td>evanyeyeye</td>
+                                        <td>
+                                            <span data-livestamp="1489456471"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Petty Difference</td>
+                                        <td>Forensics</td>
+                                        <td>75</td>
+                                        <td>evanyeyeye</td>
+                                        <td>
+                                            <span data-livestamp="1489455627"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Web Tunnel</td>
+                                        <td>Web</td>
+                                        <td>260</td>
+                                        <td>ezwang</td>
+                                        <td>
+                                            <span data-livestamp="1489455001"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Edge 2</td>
+                                        <td>Web</td>
+                                        <td>200</td>
+                                        <td>ezwang</td>
+                                        <td>
+                                            <span data-livestamp="1489453946"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Edge 1</td>
+                                        <td>Web</td>
+                                        <td>100</td>
+                                        <td>ezwang</td>
+                                        <td>
+                                            <span data-livestamp="1489453543"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Clear and Concise Commentary on Caesar Cipher</td>
+                                        <td>Cryptography</td>
+                                        <td>20</td>
+                                        <td>evanyeyeye</td>
+                                        <td>
+                                            <span data-livestamp="1489453488"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>scisnerof</td>
+                                        <td>Forensics</td>
+                                        <td>70</td>
+                                        <td>evanyeyeye</td>
+                                        <td>
+                                            <span data-livestamp="1489453437"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>IRC</td>
+                                        <td>Miscellaneous</td>
+                                        <td>5</td>
+                                        <td>evanyeyeye</td>
+                                        <td>
+                                            <span data-livestamp="1489453403"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Security Through Obscurity</td>
+                                        <td>Cryptography</td>
+                                        <td>150</td>
+                                        <td>sdamashek</td>
+                                        <td>
+                                            <span data-livestamp="1489453397"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Phunky Python I</td>
+                                        <td>Reverse Engineering</td>
+                                        <td>30</td>
+                                        <td>czhao</td>
+                                        <td>
+                                            <span data-livestamp="1489451829"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Flip My Letters</td>
+                                        <td>Cryptography</td>
+                                        <td>20</td>
+                                        <td>evanyeyeye</td>
+                                        <td>
+                                            <span data-livestamp="1489450465"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Hexable</td>
+                                        <td>Reverse Engineering</td>
+                                        <td>25</td>
+                                        <td>evanyeyeye</td>
+                                        <td>
+                                            <span data-livestamp="1489449943"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Cookie Blog</td>
+                                        <td>Web</td>
+                                        <td>30</td>
+                                        <td>ezwang</td>
+                                        <td>
+                                            <span data-livestamp="1489449744"></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                
+                            </table>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("[data-toggle=tooltip]").tooltip();
+            $("ul[role=tablist]").tab();
+            $("a[role=tab]").click(function (e) {
+                e.preventDefault();
+            });
+            
+
+
+            google.charts.load("current", {"packages": ["corechart"]});
+            google.charts.setOnLoadCallback(drawChart);
+
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([["Time", "Score"], ["0:00:00", 0], ["0:02:24", 30], ["0:05:43", 55], ["0:14:25", 75], ["0:37:09", 105], ["1:03:17", 255], ["1:03:23", 260], ["1:03:57", 330], ["1:04:48", 350], ["1:05:43", 450], ["1:12:26", 650], ["1:30:01", 910], ["1:40:27", 985], ["1:54:31", 1085], ["2:02:51", 1185], ["2:07:29", 1235], ["2:19:15", 1335], ["2:26:36", 1410], ["3:43:55", 1525], ["4:41:32", 1755], ["5:49:05", 1955], ["7:12:52", 2035], ["7:14:45", 2085], ["7:31:04", 2170], ["13:28:16", 2270], ["13:44:38", 2390], ["18:01:30", 2540], ["19:23:25", 2650], ["20:05:46", 2680], ["20:34:41", 2780], ["21:02:54", 2860], ["25:59:25", 2960], ["40:18:13", 2970], ["40:19:25", 2985], ["40:22:24", 3035], ["40:26:01", 3135], ["42:35:51", 3270], ["45:23:52", 3470], ["46:49:04", 3630], ["50:35:04", 3680], ["73:30:13", 3880], ["74:17:44", 4280], ["94:40:37", 4430], ["100:43:46", 4830], ["100:48:44", 5155], ["101:42:08", 5605], ["215:29:13", 5605]]);
+
+                var options = {
+                    title: "Score Progression",
+                    curveType: "line",
+                    legend: {position: "right"},
+                    vAxes: { 0: {title: "Score"} },
+                    hAxes: { 0: {title: "Time"} },
+                };
+
+                var chart = new google.visualization.LineChart(document.getElementById("progression_chart"));
+
+                chart.draw(data, options);
+            }
+        });
+
+    </script>
+
+</div>
+<div class="footer">
+    <footer class="site-footer site-footer--sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <h5 class="footer-heading">EasyCTF 2017</h5>
+                <p>EasyCTF is a national, online, student-run high school hacking competition that opens the door to computer science and cybersecurity for students all over the world.</p>
+                <ul class="list-inline">
+                </ul>
+            </div>
+            <div class="col-sm-8">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <h5 class="footer-heading">Useful Links</h5>
+                        <ul>
+                            <li><a href="../../about.1">About</a></li>
+                            <li><a href="../../about/sponsors">Sponsors</a></li>
+                            <li><a href="../../about/prizes">Prizes</a></li>
+                            <li><a href="../../about/rules">Rules</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-8">
+                        <h5 class="footer-heading">Get in touch with us</h5>
+                        <p id="links">
+                            <a href="mailto:team@easyctf.com" target="_blank" rel="noopener"><i class="fa fa-fw fa-2x fa-envelope"></i></a>
+                            <a href="https://facebook.com/easyctf" target="_blank" rel="noopener"><i class="fa fa-fw fa-2x fa-facebook-square"></i></a>
+                            <a href="https://twitter.com/easyctf" target="_blank" rel="noopener"><i class="fa fa-fw fa-2x fa-twitter"></i></a>
+                            <a href="https://github.com/easyctf" target="_blank" rel="noopener"><i class="fa fa-fw fa-2x fa-github"></i></a>
+                            <a href="https://slack.easyctf.com" target="_blank" rel="noopener"><i class="fa fa-fw fa-2x fa-slack"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row footer-copyright">
+            <p>Copyright &copy; EasyCTF 2017. Powered by <a href="https://github.com/easyctf/openctf" target="_blank">OpenCTF</a>.</p>
+        </div>
+</footer>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32258920-2', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>
